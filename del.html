@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adel — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="adel.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Header -->
+  <header>
+  <div class="logo">Adell<span>.</span></div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav id="navMenu">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#project">WORKS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text reveal">
+      <div class="hero-tag">Web Developer &amp; Designer</div>
+      <h1 class="hero-title">
+        Creating websites<br>
+        that feel <em>alive</em>
+      </h1>
+      <p class="hero-desc">
+        Membuat website modern, estetik, dan responsive — di mana setiap piksel dirancang dengan penuh perhatian menggunakan HTML, CSS, dan JavaScript.
+      </p>
+      <a href="#project" class="hero-cta">
+        <span>Lihat Project</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="blob-wrap">
+        <div class="blob"></div>
+        <div class="blob-inner">
+          <span class="blob-icon">💖</span>
+          <span class="blob-label">@nrhdlya</span>
+        </div>
+        <div class="float-badge"><i class="fas fa-code"></i> HTML</div>
+        <div class="float-badge"><i class="fas fa-palette"></i> CSS</div>
+        <div class="float-badge"><i class="fas fa-mobile-alt"></i> JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-num">01 — About</div>
+      <h2 class="section-title">About <em>me</em> </h2>
+    </div>
+    <div class="about-grid">
+      <div class="skill-cell reveal">
+        <div class="skill-number">01</div>
+        <h3>Frontend Developer</h3>
+        <p>Membangun tampilan website yang indah, modern, dan responsif dengan kode yang rapi dan terstruktur.</p>
+      </div>
+      <div class="skill-cell reveal">
+        <div class="skill-number">02</div>
+        <h3>UI Design</h3>
+        <p>Merancang antarmuka yang aesthetic dan nyaman digunakan — memadukan warna, tipografi, dan layout secara harmonis.</p>
+      </div>
+      <div class="skill-cell reveal">
+        <div class="skill-number">03</div>
+        <h3>Creative Ideas</h3>
+        <p>Selalu hadir dengan konsep segar dan solusi inovatif untuk setiap project website yang unik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="project">
+    <div class="section-header reveal">
+      <div class="section-num">02 — Projects</div>
+      <h2 class="section-title">Selected <em>works</em></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-number">— Project 01</div>
+        <h3>Portfolio Website</h3>
+        <p>Website portfolio personal dengan tema yang kuat, tipografi ekspresif, dan animasi yang halus.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Animations</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-number">— Project 02</div>
+        <h3>Landing Page</h3>
+        <p>Landing page bisnis yang clean, modern, dan dioptimalkan untuk konversi dengan layout yang responsif.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-number">— Project 03</div>
+        <h3>Online Shop</h3>
+        <p>Tampilan toko online yang aesthetic, user-friendly, dengan grid produk yang elegan dan cart yang interaktif.</p>
+        <div class="project-tags">
+          <span class="tag">E-Commerce</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Responsive</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-num">03 — Contact</div>
+        <h2 class="section-title">Let's <em>connect</em></h2>
+        <p>Punya project keren? Atau sekedar ingin ngobrol soal desain dan coding — aku selalu senang berkenalan!</p>
+      </div>
+      <div class="contact-links reveal">
+        <a href="https://instagram.com/nrhdlya" target="_blank" class="contact-link">
+          <i class="fab fa-instagram"></i>
+          <div class="contact-link-text">
+            <span class="contact-link-label">Instagram</span>
+            <span class="contact-link-value">@nrhdlya</span>
+          </div>
+          <i class="fas fa-arrow-right contact-link-arrow"></i>
+        </a>
+        <a href="https://wa.me/6282116201982" target="_blank" class="contact-link">
+          <i class="fab fa-whatsapp"></i>
+          <div class="contact-link-text">
+            <span class="contact-link-label">WhatsApp</span>
+            <span class="contact-link-value">+62 821-1620-1982</span>
+          </div>
+          <i class="fas fa-arrow-right contact-link-arrow"></i>
+        </a>
+        <a href="https://github.com/nrhdlya" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i>
+          <div class="contact-link-text">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">nrhdlya</span>
+          </div>
+          <i class="fas fa-arrow-right contact-link-arrow"></i>
+        </a>
+        <a href="mailto:nurhadelyamustari18@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-link-text">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">nurhadelyamustari18@gmail.com</span>
+          </div>
+          <i class="fas fa-arrow-right contact-link-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">Adel<span>.</span></div>
+    <p>© 2026 Adel — Crafted with 💖</p>
+  </footer>
+
+  <script src="adel.js"></script>
+
+</body>
+</html>
