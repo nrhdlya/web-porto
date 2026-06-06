@@ -577,7 +577,7 @@ footer p {
   .hero { padding: 100px 5% 50px; }
 }
 
-/* Hamburger */
+/* ─── HAMBURGER ─── */
 .menu-toggle{
   display:none;
   font-size:30px;
@@ -585,15 +585,7 @@ footer p {
   cursor:pointer;
 }
 
-/* Hamburger */
-.menu-toggle{
-  display:none;
-  font-size:30px;
-  color:#ff6b9d;
-  cursor:pointer;
-}
-
-/* Mobile */
+/* ─── MOBILE ─── */
 @media (max-width:768px){
 
     header{
@@ -632,7 +624,7 @@ footer p {
         padding:12px 0;
     }
 
-    /* Hero */
+    /* ─── HERO ─── */
     .hero-title{
         font-size:42px;
     }
@@ -646,7 +638,7 @@ footer p {
         font-size:12px;
     }
 
-    /* About */
+    /* ─── ABOUT ─── */
     .skill-number{
         font-size:45px;
     }
@@ -655,7 +647,7 @@ footer p {
         padding:30px 24px;
     }
 
-    /* Project */
+    /* ─── PROJECT ─── */
     .project-card{
         padding:24px;
     }
@@ -664,7 +656,7 @@ footer p {
         font-size:20px;
     }
 
-    /* Contact */
+    /* ─── CONTACT ─── */
     .contact-link{
         padding:16px;
     }
@@ -674,14 +666,14 @@ footer p {
         word-break:break-word;
     }
 
-    /* Footer */
+    /* ─── FOOTER ─── */
     footer{
         flex-direction:column;
         text-align:center;
         gap:12px;
     }
 
-    /* Sembunyikan cursor custom di HP */
+    /* ─── Sembunyikan cursor custom di HP ─── */
     .cursor,
     .cursor-ring{
         display:none;
