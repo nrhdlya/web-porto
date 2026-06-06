@@ -589,7 +589,10 @@ footer p {
 @media (max-width:768px){
 
     header{
-        position:relative;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
     }
 
     .menu-toggle{
@@ -597,27 +600,75 @@ footer p {
     }
 
     nav{
-        display:none;
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#f6eef2;
-        flex-direction:column;
-        align-items:flex-start;
-        padding:18px 22px;
-        border-top:1px solid rgba(0,0,0,.08);
-        z-index:1000;
-    }
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#f6eef2;
+    flex-direction:column;
+    align-items:center; /* ubah ini */
+    text-align:center;  /* tambahkan */
+    padding:18px 22px;
+    border-top:1px solid rgba(0,0,0,.08);
+    z-index:1000;
+}
 
     nav.active{
         display:flex;
     }
 
     nav a{
-        margin:0;
-        padding:4px 0;
-        font-size:1rem;
-        letter-spacing:1px;
+    width:100%;
+    text-align:center;
+    padding:12px 0;
+}
+}
+
+    /* RESPONSIVE TAMBAHAN */
+@media (max-width:768px){
+
+    .hero-title{
+        font-size:42px;
+    }
+
+    .hero-desc{
+        font-size:14px;
+    }
+
+    .hero-cta{
+        padding:14px 28px;
+        font-size:12px;
+    }
+
+    .skill-number{
+        font-size:45px;
+    }
+
+    .skill-cell{
+        padding:30px 24px;
+    }
+
+    .project-card{
+        padding:24px;
+    }
+
+    .project-card h3{
+        font-size:20px;
+    }
+
+    .contact-link{
+        padding:16px;
+    }
+
+    .contact-link-value{
+        font-size:13px;
+        word-break:break-word;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:12px;
     }
 }
