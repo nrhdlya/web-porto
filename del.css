@@ -579,10 +579,18 @@ footer p {
 
 /* Hamburger */
 .menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#ff6b9d;
-    cursor:pointer;
+  display:none;
+  font-size:30px;
+  color:#ff6b9d;
+  cursor:pointer;
+}
+
+/* Hamburger */
+.menu-toggle{
+  display:none;
+  font-size:30px;
+  color:#ff6b9d;
+  cursor:pointer;
 }
 
 /* Mobile */
@@ -600,34 +608,31 @@ footer p {
     }
 
     nav{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#f6eef2;
-    flex-direction:column;
-    align-items:center; /* ubah ini */
-    text-align:center;  /* tambahkan */
-    padding:18px 22px;
-    border-top:1px solid rgba(0,0,0,.08);
-    z-index:1000;
-}
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#f6eef2;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:18px 22px;
+        border-top:1px solid rgba(0,0,0,.08);
+        z-index:1000;
+    }
 
     nav.active{
         display:flex;
     }
 
     nav a{
-    width:100%;
-    text-align:center;
-    padding:12px 0;
-}
-}
+        width:100%;
+        text-align:center;
+        padding:12px 0;
+    }
 
-    /* RESPONSIVE TAMBAHAN */
-@media (max-width:768px){
-
+    /* Hero */
     .hero-title{
         font-size:42px;
     }
@@ -641,6 +646,7 @@ footer p {
         font-size:12px;
     }
 
+    /* About */
     .skill-number{
         font-size:45px;
     }
@@ -649,6 +655,7 @@ footer p {
         padding:30px 24px;
     }
 
+    /* Project */
     .project-card{
         padding:24px;
     }
@@ -657,6 +664,7 @@ footer p {
         font-size:20px;
     }
 
+    /* Contact */
     .contact-link{
         padding:16px;
     }
@@ -666,9 +674,16 @@ footer p {
         word-break:break-word;
     }
 
+    /* Footer */
     footer{
         flex-direction:column;
         text-align:center;
         gap:12px;
+    }
+
+    /* Sembunyikan cursor custom di HP */
+    .cursor,
+    .cursor-ring{
+        display:none;
     }
 }

@@ -1,58 +1,61 @@
-// Custom cursor
-const cursor = document.getElementById('cursor');
-const cursorRing = document.getElementById('cursorRing');
+// =======================
+// CUSTOM CURSOR
+// =======================
+
+const cursor = document.getElementById("cursor");
+const cursorRing = document.getElementById("cursorRing");
 
 let mx = 0;
 let my = 0;
 let rx = 0;
 let ry = 0;
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener("mousemove", (e) => {
   mx = e.clientX;
   my = e.clientY;
 
-  cursor.style.left = mx + 'px';
-  cursor.style.top = my + 'px';
+  cursor.style.left = `${mx}px`;
+  cursor.style.top = `${my}px`;
 });
 
-function animRing() {
+function animateRing() {
   rx += (mx - rx) * 0.12;
   ry += (my - ry) * 0.12;
 
-  cursorRing.style.left = rx + 'px';
-  cursorRing.style.top = ry + 'px';
+  cursorRing.style.left = `${rx}px`;
+  cursorRing.style.top = `${ry}px`;
 
-  requestAnimationFrame(animRing);
+  requestAnimationFrame(animateRing);
 }
 
-animRing();
+animateRing();
 
-document.querySelectorAll('a, button').forEach((el) => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.transform =
-      'translate(-50%, -50%) scale(2)';
-    cursorRing.style.transform =
-      'translate(-50%, -50%) scale(1.5)';
-    cursorRing.style.opacity = '0.25';
+// Hover Effect
+document.querySelectorAll("a, button").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(2)";
+    cursorRing.style.transform = "translate(-50%, -50%) scale(1.5)";
+    cursorRing.style.opacity = "0.25";
   });
 
-  el.addEventListener('mouseleave', () => {
-    cursor.style.transform =
-      'translate(-50%, -50%) scale(1)';
-    cursorRing.style.transform =
-      'translate(-50%, -50%) scale(1)';
-    cursorRing.style.opacity = '0.5';
+  el.addEventListener("mouseleave", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+    cursorRing.style.transform = "translate(-50%, -50%) scale(1)";
+    cursorRing.style.opacity = "0.5";
   });
 });
 
-// Scroll reveal
+// =======================
+// SCROLL REVEAL
+// =======================
+
 const observer = new IntersectionObserver(
   (entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 80);
+          entry.target.classList.add("visible");
+        }, index * 80);
       }
     });
   },
@@ -62,12 +65,23 @@ const observer = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll('.reveal')
+  .querySelectorAll(".reveal")
   .forEach((el) => observer.observe(el));
 
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
+// =======================
+// MOBILE MENU
+// =======================
 
-menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+// Tutup menu setelah link diklik
+document.querySelectorAll("#navMenu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
 });
